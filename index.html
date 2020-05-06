@@ -36,21 +36,14 @@
   </head>
   <body>
 
-    <ul class="menu">
-      <li class="menu"><a class="active" href="index.html">Home</a></li>
-      <li class="menu"><a href="admin.html">Admin</a></li>
-
-   </ul>
-
     <div id='contents'>
-      <h2> A thematical picture dictionary </h2>
+      <h2> An image quiz </h2>
     </div>
     <footer>
-      <p style="font-size:15px">All the photos in this
-        presentation are taken from Oxford Picture Dictionary.</p>
+      <p style="font-size:15px">.</p>
     </footer>
   <script type="text/javascript">
-    let url = 'https://picturedictionary-001-api.herokuapp.com/contents';
+    let url = 'https://imagequiz-001-api.herokuapp.com/contents';
     fetch(url)
     .then(response => {
       if(response.ok === true) {
