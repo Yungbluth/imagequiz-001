@@ -34,11 +34,7 @@
     </style>
   </head>
   <body>
-    <ul class="menu">
-      <li class="menu"><a class="active" href="index.html">Home</a></li>
-      <li class="menu"><a href="admin.html">Admin</a></li>
-   </ul>
-  <h2 id='sectionTitle'></h2>
+  <h2 id='Quizzes'></h2>
   <div id='imagesSection' style='float:left;width:70%'>
     <img id='imageHolder' onclick="imageClicked(event)">
   </div>
@@ -54,7 +50,7 @@
     document.getElementById('sectionTitle').innerHTML = parameters.get('name');
     let contentId = parameters.get('id');
     let photoId = 1;
-    let baseUrl = 'https://picturedictionary-001-api.herokuapp.com';
+    let baseUrl = 'https://imagequiz-001-api.herokuapp.com';
     fetch(`${baseUrl}/pages/${contentId}`)
     .then(response => {
       if(response.ok)
